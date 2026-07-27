@@ -1,0 +1,236 @@
+import type { Metadata , Viewport } from "next";
+import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const title = "Raj Mohan — Full Stack Java Developer | Portfolio";
+const description =
+  "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.";
+
+export const viewport: Viewport = {
+  themeColor: "#110f0b",
+};
+  
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: title,
+    template: "%s | Raj Mohan",
+  },
+  description,
+  keywords: [
+    "Raj Mohan", 
+    "Raj Mohan Developer",
+    "Raj Mohan Portfolio",
+    "Raj Mohan Java Developer",
+    "Raj Mohan Spring Boot",
+    "Raj Mohan GitHub",
+    "Raj Mohan LinkedIn",
+    "Raj Mohan Resume",
+    "Raj Mohan Full Stack Developer",
+    "Raj Mohan Backend Developer",
+    "Raj Mohan Software Engineer",
+    "Raj Mohan Software Developer",
+    "Rajmohan",
+    "Rajmohan Portfolio",
+    "Rajmohan Developer",
+    "Rajmohan Java Developer",
+    "Rajmohan Spring Boot",
+    "Rajmohan GitHub",
+    "Rajmohan LinkedIn",
+    "Rajmohan Resume",
+    "Rajmohan Full Stack Developer",
+    "Rajmohan Backend Developer",
+    "Rajmohan Software Engineer",
+    "Rajmohan Software Developer",
+    "Java",
+    "Java Developer",
+    "Spring Boot",
+    "Spring Boot Developer",
+    "Java Spring Boot Developer",
+    "Microservices",
+    "Java Microservices Developer",
+    "Spring Boot Microservices",
+    "REST API",
+    "REST API Developer",
+    "Apache Kafka",
+    "Kafka",
+    "Apache Kafka Developer",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "PostgreSQL",
+    "Hibernate",
+    "Backend Developer",
+    "Java Backend Engineer",
+    "Software Engineer",
+    "Full Stack Developer",
+    "Full Stack Java Developer",
+    "Java Developer Chennai",
+    "Backend Engineer India",
+    "Software Developer Portfolio",
+    "Event Driven Architecture",
+    "Distributed Systems"
+  ],
+  authors: [{ name: "Raj Mohan", url: siteUrl }],
+  creator: "Raj Mohan",
+  publisher: "Raj Mohan",
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: siteUrl,
+    title: "Raj Mohan — Full Stack Java Developer",
+    description,
+    siteName: "Raj Mohan | Portfolio",
+    images: [
+      {
+        url: `${siteUrl}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "Raj Mohan — Full Stack Java Developer Portfolio",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raj Mohan — Full Stack Java Developer",
+    description,
+    images: [`${siteUrl}/opengraph-image`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add your Google Search Console verification code here
+    // google: "your-google-verification-code",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="canonical" href={siteUrl} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "@id": `${siteUrl}/#person`,
+                  name: "Raj Mohan",
+                  url: siteUrl,
+                  jobTitle: "Full Stack Java Developer",
+                  description:
+                    "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.",
+                  email: "rajmohan5323@gmail.com",
+                  telephone: "+919787005323",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Chennai",
+                    addressCountry: "IN",
+                  },
+                  alumniOf: [
+                    {
+                      "@type": "CollegeOrUniversity",
+                      name: "MR College of Arts & Science",
+                    },
+                  ],
+                  worksFor: {
+                    "@type": "Organization",
+                    name: "Machint Solutions Ltd",
+                    url: "https://machint.com/",
+                  },
+                  knowsAbout: [
+                    "Java",
+                    "Spring Boot",
+                    "Microservices",
+                    "REST APIs",
+                    "Apache Kafka",
+                    "Docker",
+                    "Kubernetes",
+                    "PostgreSQL",
+                    "Redis",
+                    "AWS"
+                  ],
+                  sameAs: [
+                    "https://www.linkedin.com/in/raj-mohan-5169ab2a8/",
+                    "https://github.com/Rajmohan5323",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${siteUrl}/#website`,
+                  url: siteUrl,
+                  name: "Raj Mohan — Portfolio",
+                  description:
+                     "Portfolio of Raj Mohan, a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, AWS and REST API development.",
+                  publisher: { "@id": `${siteUrl}/#person` },
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": `${siteUrl}/#webpage`,
+                  url: siteUrl,
+                  name: "Raj Mohan — Full Stack Java Developer | Portfolio",
+                  description:
+                       "Portfolio of Raj Mohan, a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, AWS and REST API development.",
+                  isPartOf: { "@id": `${siteUrl}/#website` },
+                  about: { "@id": `${siteUrl}/#person` },
+                },
+              ],
+            }),
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var mode = localStorage.getItem('theme');
+                  if (mode === 'light') {
+                    document.documentElement.classList.remove('dark');
+                  } else {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch(e) {
+                  document.documentElement.classList.add('dark');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className="antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
+        >
+          Skip to content
+        </a>
+        {children}
+       <Analytics />
+       <SpeedInsights />
+      </body>
+    </html>
+  );
+}
