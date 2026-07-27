@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="" target="_blank">🌐 Live Demo</a> •
+  <a href="https://raj-mohan-portfolio.vercel.app/" target="_blank">🌐 Live Demo</a> •
   <a href="https://github.com/Rajmohan5323/portfolio" target="_blank">GitHub Repository</a>
 </p>
 
@@ -15,8 +15,8 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwind-css" />
   <img src="https://img.shields.io/badge/Three.js-black?logo=three.js" />
   <img src="https://img.shields.io/badge/Framer_Motion-black?logo=framer" />
-  <!-- <img src="https://img.shields.io/github/stars/Rajmohan5323/portfolio?style=flat" />
-  <img src="https://img.shields.io/github/forks/Rajmohan5323/portfolio?style=flat" /> -->
+  <img src="https://img.shields.io/github/stars/Rajmohan5323/portfolio?style=flat" />
+  <img src="https://img.shields.io/github/forks/Rajmohan5323/portfolio?style=flat" /> 
   <img src="https://img.shields.io/github/last-commit/Rajmohan5323/portfolio" />
 </p>
 
@@ -28,7 +28,7 @@
 
 ## 📸 Preview
 
-![Portfolio Preview](https://raj-mohan.vercel.app/opengraph-image)
+![Portfolio Preview](https://raj-mohan-portfolio.vercel.app/opengraph-image)
 
 ---
 
