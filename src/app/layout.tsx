@@ -115,7 +115,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // Add your Google Search Console verification code here
-    // google: "your-google-verification-code",
+     google: "hWZNtoNyL5OvqpiEuUpQgsUDO_t4rAX8F2dTpewUd8E",
   },
 };
 
