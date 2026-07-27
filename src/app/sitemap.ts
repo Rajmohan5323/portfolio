@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://raj-mohan-portfolio.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: siteUrl,
-      lastModified: new Date("2026-07-27"),
+      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },

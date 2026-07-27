@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://raj-mohan-portfolio.vercel.app";
 const title = "Raj Mohan — Full Stack Java Developer | Portfolio";
 const description =
   "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.";
