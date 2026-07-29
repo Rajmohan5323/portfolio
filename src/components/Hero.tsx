@@ -9,6 +9,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import ExperienceBadge from "@/components/ExperienceBadge";
 import AnimatedUnderline from "@/components/AnimatedUnderline";
 
+
 function useTypingEffect(texts: string[], typingSpeed = 80, deletingSpeed = 50, pauseDuration = 2000) {
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -66,24 +67,25 @@ export default function Hero() {
     mouseY.set(0);
   };
   return (
-     <motion.section
-          initial={{
-            opacity: 0,
-            y: 40,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.8,
-            delay: 0.15,
-          }}
-       className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden -mt-3"
-      >
-    {/* Background decoration */}
+    <motion.section
+      initial={{
+        opacity: 0,
+        y: 40,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.8,
+        delay: 0.15,
+      }}
+      className="relative min-h-screen flex items-center justify-center section-padding overflow-visible -mt-3"
+    >
+
+      {/* Background decoration */}
       <div className="relative z-10 max-w-7xl mx-auto px-2">
-        <div className="grid lg:grid-cols-5 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
 
           {/* LEFT SIDE CONTENT */}
           <div className="lg:col-span-3 text-center lg:text-left lg:pl-20 -mt-2">
@@ -127,7 +129,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-6 flex flex-wrap gap-7 justify-center lg:justify-center -mt-2"
+              className="mt-6 flex flex-wrap gap-7 justify-center lg:justify-center"
             >
               <a
                 href="#contact"
@@ -175,7 +177,7 @@ export default function Hero() {
           >
             <div className="lg:col-span-2 flex justify-end">
               {/*Profile Image */}
-              <div className="translate-x-20 relative"
+              <div className="translate-x-[-20px] sm:translate-x-0 lg:translate-x-20"
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
               >
@@ -216,7 +218,13 @@ export default function Hero() {
                           width={460}
                           height={560}
                           quality={100}
-                          className="relative z-20 w-[280px] h-[360px] object-cover"
+                          // className="relative z-20 w-[280px] h-[360px] object-cover"
+                          className="relative z-20
+                                        w-[230px] h-[300px]
+                                        sm:w-[250px] sm:h-[320px]
+                                        md:w-[270px] md:h-[350px]
+                                        lg:w-[280px] lg:h-[360px]
+                                        object-cover"
                         />
 
                       </div>
@@ -256,8 +264,8 @@ export default function Hero() {
                     whileHover={{ y: -6 }}
                     transition={{ duration: 0.25 }}
                     className={`flex items-center gap-4 p-5 py-5 ${index !== highlights.length - 1
-                        ? "lg:border-r border-white/10"
-                        : ""
+                      ? "lg:border-r border-white/10"
+                      : ""
                       }`}
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 border border-accent/20 text-accent">

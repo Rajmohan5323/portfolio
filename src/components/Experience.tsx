@@ -8,13 +8,14 @@ import { FileCheck } from "lucide-react";
 import Image from "next/image";
 import AnimatedUnderline from "@/components/AnimatedUnderline";
 
+
 export default function Experience() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="experience" className="section-padding bg-section-alt" ref={ref}>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -24,21 +25,6 @@ export default function Experience() {
 
             {/* Icon + Heading */}
         <div className="flex items-center justify-center gap-4 mb-4">
-          {/* <div
-            className="
-              flex h-16 w-16 items-center justify-center
-              rounded-2xl
-              border border-yellow-400/30
-              bg-yellow-400/10
-              shadow-[0_0_25px_rgba(250,204,21,0.18)]
-            "
-          >
-            <FileCheck
-              size={34}
-              className="text-yellow-400"
-              strokeWidth={2}
-            />
-          </div> */}
           <h2 className="text-3xl sm:text-4xl font-bold mb-3">
             Work <span className="gradient-text">Experience</span>
           </h2>
@@ -68,22 +54,7 @@ export default function Experience() {
                 <div className="gradient-border-card glow-hover bg-card border border-card-border rounded-2xl p-6 hover:border-accent/30 transition-all">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                     
-                     <div className="flex items-center gap-2">
-                        {/* <Image
-                          src={`/icons/${exp.icon}`}
-                          alt="Experience Letter"
-                          width={102}
-                          height={82}
-                          className="object-contain"
-                        />
-
-                        <Image
-                          src={`/icons/${exp.icon}`}
-                          alt={`${exp.company} Logo`}
-                          width={80}
-                          height={80}
-                          className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-cover rounded-xl border border-card-border shadow-md flex-shrink-0"
-                        /> */}
+                     <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                         <div className="group relative w-16 h-10 sm:w-18 sm:h-10 md:w-20 md:h-10 flex-shrink-0 rounded-4xl  bg-card overflow-hidden transition-all duration-300 ">
                             <Image
                               src={`/icons/${exp.icon}`}
@@ -100,7 +71,7 @@ export default function Experience() {
                             {exp.company}
                           </h3>
                            
-                          <div className="flex items-center gap-2">
+                          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                             <FiBriefcase className="text-accent" size={14} />
                             <span className="text-sm font-medium text-accent">
                               {exp.role}
@@ -110,12 +81,12 @@ export default function Experience() {
                         </div>
 
                    
-                    <div className="self-start -mt-5">
+                    <div className="self-start sm:self-auto mt-2 sm:mt-0">
                       <a
                         href={exp.certificate}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-1 mt-5 px-2.5 py-1 rounded-lg bg-accent-glow border border-accent/20 text-xs font-medium text-accent hover:border-accent/50 hover:bg-accent/10 hover:shadow-[0_0_14px_rgba(250,204,21,.18)] transition-all duration-300"
+                        className="group inline-flex items-center gap-1  px-2.5 py-1 rounded-lg bg-accent-glow border border-accent/20 text-xs font-medium text-accent hover:border-accent/50 hover:bg-accent/10 hover:shadow-[0_0_14px_rgba(250,204,21,.18)] transition-all duration-300"
                       >
                         <FileCheck size={20} className="group-hover:scale-110 transition-transform" />
                         <span>Experience Certificate</span>

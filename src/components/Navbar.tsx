@@ -167,7 +167,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1JduBZHmgS07GSjM7cPAh4Bg8R5nif7hw/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ks3tJdlRodwPr30y6q4hA_FfPbekIUNc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}

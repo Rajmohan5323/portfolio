@@ -194,7 +194,7 @@ function ProficiencyBar({
             {skill.proficiency}%
           </span>
         </div>
-        <div className="h-1.5 w-full bg-card-border/50 rounded-full overflow-hidden">
+        <div className="h-1 w-full bg-card-border/50 rounded-full overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={isInView ? { width: `${skill.proficiency}%` } : {}}
@@ -230,7 +230,7 @@ export default function Skills3D() {
 
   return (
     <section className="section-padding" ref={ref}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -246,7 +246,7 @@ export default function Skills3D() {
           <AnimatedUnderline/>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Left: Tabs + Proficiency List */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -254,12 +254,12 @@ export default function Skills3D() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             {/* Tab buttons */}
-            <div className="flex gap-1 p-1 bg-card border border-card-border rounded-xl mb-6">
+            <div className="flex gap-1 p-1 bg-card border border-card-border rounded-xl mb-4">
               {tabs.map(([key, label]) => (
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className="relative flex-1 flex items-center justify-center gap-2 px-3 py-2.5 text-xs font-semibold rounded-lg transition-all duration-300"
+                  className="relative flex-1 flex items-center justify-center gap-2 px-2 py-2 text-xs font-semibold rounded-lg transition-all duration-300"
                   style={{
                     color:
                       activeTab === key
@@ -293,8 +293,8 @@ export default function Skills3D() {
             </div>
 
             {/* Active tab skills */}
-            <div className="min-h-[340px]">
-              <div className="space-y-3" key={activeTab}>
+            <div className="min-h-[300px]">
+              <div className="space-y-2" key={activeTab}>
                 {activeItems.map((skill, i) => (
                   <ProficiencyBar
                     key={skill.name}
