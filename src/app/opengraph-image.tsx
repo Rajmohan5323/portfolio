@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Raj Mohan — Full Stack Java Developer Portfolio";
+export const alt = "Raj Mohan — Full Stack Java Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -166,7 +166,7 @@ export default async function OGImage() {
             fontWeight: 500,
           }}
         >
-          {/* { "raj-mohan-portfolio.vercel.app" }  */}
+          { "raj-mohan-portfolio.vercel.app" } 
         </div>
       </div>
     ),

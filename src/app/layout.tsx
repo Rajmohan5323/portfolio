@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://raj-mohan-portfolio.vercel.app";
-const title = "Raj Mohan — Full Stack Java Developer | Portfolio";
+const title = "Raj Mohan - Full Stack Java Developer";
 const description =
-  "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.";
+  "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Redis, PostgreSQL, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.";
 
 export const viewport: Viewport = {
   themeColor: "#110f0b",
@@ -85,13 +85,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Raj Mohan — Full Stack Java Developer",
     description,
-    siteName: "Raj Mohan | Portfolio",
+    siteName: "Raj Mohan",
     images: [
       {
         url: `${siteUrl}/opengraph-image`,
         width: 1200,
         height: 630,
-        alt: "Raj Mohan — Full Stack Java Developer Portfolio",
+        alt: "Raj Mohan — Full Stack Java Developer",
         type: "image/png",
       },
     ],
@@ -128,7 +128,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="canonical" href={siteUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -140,11 +139,10 @@ export default function RootLayout({
                   "@id": `${siteUrl}/#person`,
                   name: "Raj Mohan",
                   url: siteUrl,
+                   image: `${siteUrl}/Profile.png`,
                   jobTitle: "Full Stack Java Developer",
                   description:
-                    "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.",
-                  email: "rajmohan5323@gmail.com",
-                  telephone: "+919787005323",
+                    "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Redis, PostgreSQL, Docker,  Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Chennai",
@@ -167,11 +165,11 @@ export default function RootLayout({
                     "Microservices",
                     "REST APIs",
                     "Apache Kafka",
-                    "Docker",
-                    "Kubernetes",
                     "PostgreSQL",
                     "Redis",
-                    "AWS"
+                    "Docker",
+                    "Kubernetes",
+                    "AWS",
                   ],
                   sameAs: [
                     "https://www.linkedin.com/in/raj-mohan-5169ab2a8/",
@@ -182,7 +180,11 @@ export default function RootLayout({
                   "@type": "WebSite",
                   "@id": `${siteUrl}/#website`,
                   url: siteUrl,
-                  name: "Raj Mohan — Portfolio",
+                  name: "Raj Mohan",
+                  alternateName: [
+                        "Raj Mohan Software Engineer",
+                        "Raj Mohan | Full Stack Java Developer"
+                      ],
                   description:
                      "Portfolio of Raj Mohan, a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, AWS and REST API development.",
                   publisher: { "@id": `${siteUrl}/#person` },
@@ -191,7 +193,7 @@ export default function RootLayout({
                   "@type": "WebPage",
                   "@id": `${siteUrl}/#webpage`,
                   url: siteUrl,
-                  name: "Raj Mohan — Full Stack Java Developer | Portfolio",
+                  name: "Raj Mohan | Full Stack Java Developer",
                   description:
                        "Portfolio of Raj Mohan, a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, AWS and REST API development.",
                   isPartOf: { "@id": `${siteUrl}/#website` },

@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { FiMail, FiHeart } from "react-icons/fi";
+import { FiMail, FiZap } from "react-icons/fi";
 import { personalInfo, navLinks } from "@/lib/data";
 
 export default function Footer() {
@@ -71,9 +71,9 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-card-border text-center">
           <p className="text-xs text-muted flex items-center justify-center gap-1">
-            © {new Date().getFullYear()} Raj Mohan. Built with
-            <FiHeart size={12} className="text-rose-500" />
-            using Next.js & Tailwind CSS
+            Designed & Built with <FiZap size={12} className="text-yellow-500" /> by <span className="font-bold text-yellow-500" >Raj Mohan</span></p>
+          <p className="text-xs text-muted mt-2">
+             © {new Date().getFullYear()} · All rights reserved
           </p>
         </div>
       </div>

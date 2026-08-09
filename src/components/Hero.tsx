@@ -213,7 +213,7 @@ export default function Hero() {
                       <div className="rounded-[40px] overflow-hidden border-[1.5px] border-yellow-400 shadow-[0_0_70px_rgba(251,191,36,.35)]">
 
                         <Image
-                          src="/Profile2.png"
+                          src="/Profile.png"
                           alt="Raj Mohan"
                           width={460}
                           height={560}

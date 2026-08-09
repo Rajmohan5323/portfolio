@@ -77,7 +77,7 @@ export default function Navbar() {
             RM
           </a> */}
           <Image
-            src="/Profile.jpg"
+            src="/ProfileNav.png"
             alt="Raj Mohan"
             width={50}
             height={50}
