@@ -26,7 +26,7 @@ export default function AppleIcon() {
             lineHeight: 1,
           }}
         >
-          RP
+          RM
         </span>
       </div>
     ),
