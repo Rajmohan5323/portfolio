@@ -180,7 +180,7 @@ export default function RootLayout({
                     "AWS",
                   ],
                   sameAs: [
-                    "https://www.linkedin.com/in/raj-mohan-5169ab2a8/",
+                    "https://www.linkedin.com/in/rajmohan5323/",
                     "https://github.com/Rajmohan5323",
                   ],
                 },

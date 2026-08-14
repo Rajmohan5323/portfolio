@@ -167,7 +167,7 @@ or simply connect your GitHub repository to Vercel for automatic deployments.
 rajmohan5323@gmail.com
 
 💼 **LinkedIn**
-https://www.linkedin.com/in/raj-mohan-5169ab2a8/
+https://www.linkedin.com/in/rajmohan5323/
 
 🐙 **GitHub**
 https://github.com/Rajmohan5323

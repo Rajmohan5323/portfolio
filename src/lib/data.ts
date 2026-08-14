@@ -12,7 +12,7 @@ export const personalInfo = {
   location: "Tamilnadu , India",
   phone: "+91 9787005323",
   email: "rajmohan5323@gmail.com",
-  linkedin: "https://www.linkedin.com/in/raj-mohan-5169ab2a8/",
+  linkedin: "https://www.linkedin.com/in/rajmohan5323/",
   github: "https://github.com/Rajmohan5323",
   //summary: "Full Stack Java Developer with 4+ years of experience building scalable microservices and REST APIs using Java and Spring Boot. Proficient in designing event-driven microservices with Apache Kafka, optimizing database performance with Hibernate and Redis, Deployed and maintained containerized applications on AWS with CI/CD pipelines.",
   summary:"with Java, Spring Boot, Microservices, REST APIs, Kafka, Redis, PostgreSQL, Docker, Kubernetes, and AWS. Passionate about designing clean architectures, distributed systems, and high-performance applications."
@@ -248,7 +248,7 @@ export const navLinks = [
 
 export const portfolioData = {
   socialLinks: {
-    linkedin: "https://www.linkedin.com/in/raj-mohan-5169ab2a8/",
+    linkedin: "https://www.linkedin.com/in/rajmohan5323/",
     github: "https://github.com/Rajmohan5323",
     instagram: "https://www.instagram.com/rajmohan_5323/",
     facebook: "https://www.facebook.com/raj.mohan.323/",
