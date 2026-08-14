@@ -15,12 +15,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: title,
+    default: "Raj Mohan",
     template: "%s | Raj Mohan",
   },
   description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
     shortcut: "/favicon.ico",
     apple: "/apple-icon.png",
   },
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: siteUrl,
-    title: "Raj Mohan — Full Stack Java Developer",
+    title: title,
     description,
     siteName: "Raj Mohan",
     images: [

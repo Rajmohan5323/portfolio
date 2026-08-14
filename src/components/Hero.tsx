@@ -214,10 +214,11 @@ export default function Hero() {
 
                         <Image
                           src="/Profile.webp"
-                          alt="Raj Mohan"
+                          alt="Raj Mohan - Full Stack Java Developer"
                           width={460}
                           height={560}
-                          quality={100}
+                          quality={90}
+                          priority
                           // className="relative z-20 w-[280px] h-[360px] object-cover"
                           className="relative z-20
                                         w-[230px] h-[300px]
