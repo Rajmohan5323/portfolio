@@ -166,7 +166,7 @@ export default async function OGImage() {
             fontWeight: 500,
           }}
         >
-          { "raj-mohan-portfolio.vercel.app" } 
+          https://raj-mohan-portfolio.vercel.app 
         </div>
       </div>
     ),

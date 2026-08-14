@@ -73,11 +73,8 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between ">
-          {/* <a href="#" className="text-xl font-bold gradient-text">
-            RM
-          </a> */}
           <Image
-            src="/ProfileNav.png"
+            src="/ProfileNav.webp"
             alt="Raj Mohan"
             width={50}
             height={50}

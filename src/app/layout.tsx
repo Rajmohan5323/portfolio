@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     template: "%s | Raj Mohan",
   },
   description,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   keywords: [
     "Raj Mohan", 
     "Raj Mohan Developer",
@@ -139,10 +144,13 @@ export default function RootLayout({
                   "@id": `${siteUrl}/#person`,
                   name: "Raj Mohan",
                   url: siteUrl,
-                   image: `${siteUrl}/Profile.png`,
+                  image: {
+                    "@type": "ImageObject",
+                    url: `${siteUrl}/Profile.webp`,
+                  },
                   jobTitle: "Full Stack Java Developer",
                   description:
-                    "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Redis, PostgreSQL, Docker,  Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.",
+                    "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Redis, PostgreSQL, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Chennai",
@@ -182,8 +190,8 @@ export default function RootLayout({
                   url: siteUrl,
                   name: "Raj Mohan",
                   alternateName: [
-                        "Raj Mohan Software Engineer",
-                        "Raj Mohan | Full Stack Java Developer"
+                        "Raj Mohan Java Developer",
+                        "Raj Mohan Full Stack Java Developer",
                       ],
                   description:
                      "Portfolio of Raj Mohan, a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, AWS and REST API development.",
