@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Raj Mohan",
+    default: title,
     template: "%s | Raj Mohan",
   },
   description,
@@ -121,6 +121,9 @@ export const metadata: Metadata = {
   verification: {
     // Add your Google Search Console verification code here
      google: "hWZNtoNyL5OvqpiEuUpQgsUDO_t4rAX8F2dTpewUd8E",
+     other: {
+      "msvalidate.01": "2BBB7A961E8FDAF35986BF5482030F67",
+    }
   },
 };
 
