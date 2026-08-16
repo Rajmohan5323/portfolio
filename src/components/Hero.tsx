@@ -114,9 +114,9 @@ export default function Hero() {
             </p>
 
             <div className="inline-block mb-2">
-              <h1 className="text-lg md:text-xl font-medium tracking-wide text-yellow-400 -mt-9">
+              <p className="text-lg md:text-xl font-medium tracking-wide text-yellow-400 -mt-9">
                 Building scalable backend systems
-              </h1>
+              </p>
               <AnimatedUnderline width="w-80" />
             </div>
 
