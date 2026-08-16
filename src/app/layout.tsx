@@ -5,8 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://raj-mohan-portfolio.vercel.app";
 const title = "Raj Mohan - Full Stack Java Developer";
-const description =
-  "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Apache Kafka, Redis, PostgreSQL, Docker, Kubernetes, AWS and REST API development. Explore my projects, experience and technical skills.";
+const description = "Raj Mohan is a Full Stack Java Developer with 4+ years of experience in Java, Spring Boot, Microservices, Kafka, Redis, Docker, Kubernetes, AWS and REST APIs.";
 
 export const viewport: Viewport = {
   themeColor: "#110f0b",
