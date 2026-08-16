@@ -139,7 +139,7 @@ export default function Hero() {
                 Get in Touch
               </a>
               <a
-                href="https://drive.google.com/file/d/1ks3tJdlRodwPr30y6q4hA_FfPbekIUNc/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1uxgtDzIAsZF1YXDm1hiAZ_7VQAdafLRk/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-card border border-accent/40 hover:border-accent text-accent font-medium rounded-xl transition-all hover:shadow-lg hover:shadow-accent/15 hover:-translate-y-0.5"

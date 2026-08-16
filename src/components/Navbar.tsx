@@ -103,7 +103,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://drive.google.com/file/d/1ks3tJdlRodwPr30y6q4hA_FfPbekIUNc/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1uxgtDzIAsZF1YXDm1hiAZ_7VQAdafLRk/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-accent border border-accent/30 rounded-lg hover:bg-accent hover:text-white transition-all"
@@ -164,7 +164,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1ks3tJdlRodwPr30y6q4hA_FfPbekIUNc/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1uxgtDzIAsZF1YXDm1hiAZ_7VQAdafLRk/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
