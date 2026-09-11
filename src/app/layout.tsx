@@ -149,6 +149,10 @@ export default function RootLayout({
                   image: {
                     "@type": "ImageObject",
                     url: `${siteUrl}/Profile.webp`,
+                    contentUrl: `${siteUrl}/Profile.webp`,
+                    width: 460,
+                    height: 560,
+                    caption: "Raj Mohan - Full Stack Java Developer",
                   },
                   jobTitle: "Full Stack Java Developer",
                   description:
