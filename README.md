@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://raj-mohan-portfolio.vercel.app/" target="_blank">🌐 Live Demo</a> •
-  <a href="https://github.com/Rajmohan5323/portfolio" target="_blank">GitHub Repository</a>
+  <a href="https://github.com/rajmohan5323/portfolio" target="_blank">GitHub Repository</a>
 </p>
 
 <p align="center">
@@ -108,7 +108,7 @@ src/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Rajmohan5323/portfolio.git
+git clone https://github.com/rajmohan5323/portfolio.git
 
 cd portfolio
 ```
@@ -170,7 +170,7 @@ rajmohan5323@gmail.com
 https://www.linkedin.com/in/rajmohan5323/
 
 🐙 **GitHub**
-https://github.com/Rajmohan5323
+https://github.com/rajmohan5323
 
 🌐 **Portfolio**
 https://raj-mohan.vercel.app
